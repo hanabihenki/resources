@@ -4,127 +4,357 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" href="assets/raylogo-32.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/raylogo-180.png">
+  <link rel="icon" href="assets/raylogo-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/raylogo-180.png">
 
   <title>Ray's Coding Vault</title>
-<meta name="keywords" content="HTML, CSS, JavaScript, coding resources, beginner coding, website templates, Toyhouse coding, Neocities coding, art fight, af, th, nc, coding tips, web design, front-end development, coding tutorials, coding examples, code snippets, web resources">
+
+  <meta name="keywords" content="HTML, CSS, JavaScript, coding resources, beginner coding, website templates, Toyhouse coding, Neocities coding, art fight, af, th, nc, coding tips, web design, front-end development, coding tutorials, coding examples, code snippets, web resources">
+
   <meta property="og:title" content="Ray's Coding Vault">
   <meta property="og:description" content="A simple coding resource website for HTML, CSS, JS, templates, and web resources.">
-  <meta property="og:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
+  <meta property="og:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
   <meta property="og:url" content="https://hanabihenki.github.io/resources/index.html">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ray's Coding Vault">
   <meta name="twitter:description" content="A coding resource website for HTML, CSS, JS, templates, and web resources.">
-  <meta name="twitter:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
+  <meta name="twitter:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .sample-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-height: none;
+      min-height: 320px;
+      overflow: auto;
+      object-fit: cover;
+      border: 2px solid #99ddff;
+      margin: 14px 0;
+      background: #353e66;
+      padding: 12px;
+    }
+  </style>
 </head>
+
 <body>
   <aside class="side-nav">
     <div class="nav-title">Ray's<br>Coding<br>Vault</div>
+
     <nav>
       <a class="" href="index.html">home</a>
-<a class="" href="html.html">html</a>
-<a class="" href="css.html">css</a>
-<a class="" href="js.html">js</a>
-<a class="active" href="templates.html">templates</a>
-<a class="" href="resources.html">resources</a>
+      <a class="" href="html.html">html</a>
+      <a class="" href="css.html">css</a>
+      <a class="" href="js.html">js</a>
+      <a class="active" href="templates.html">templates</a>
+      <a class="" href="resources.html">resources</a>
     </nav>
   </aside>
+
   <div class="page-wrap">
     <main>
       <h1 class="page-title templates-title">templates</h1>
-      <p class="intro">These are some templates I made using HTML and CSS. Feel free to use them! Copy the box of code to copy it to your clipboard. Please do not remove my attribution.</p>
+
+      <p class="intro">
+        These are some templates I made using HTML and CSS. Feel free to use them! Copy the box of code to copy it to your clipboard. Please do not remove my attribution.
+      </p>
+
       <hr><hr><br>
+
       <div class="card-grid">
 
+        <article class="code-card templates">
+          <div class="inner-border">
+            <h2>Simple character info</h2>
+            <p>A small character information template with a picture, name, pronouns, sexuality, age, and species.</p>
 
-       <article class="code-card templates">
-        <div class="inner-border">
-          <h2>Simple character info</h2>
-          <p>A small character information template with a picture, name, pronouns, sexuality, age, and species.</p>
+            <div class="sample-image">
+              <div style="max-width: 520px; background: #101336; color: white; border: 3px solid #d6a0ff; padding: 12px; font-family: monospace;">
+                <img src="https://hanabihenki.github.io/site/assets/classy-wink-stay-classy.gif" alt="character image" style="width: 100px; height: 100px; object-fit: cover; border: 2px solid white; float: left; margin-right: 12px;">
 
-          <div class="sample-image">
-            <div style="max-width: 320px; background: #101336; color: white; border: 3px solid #d6a0ff; padding: 12px; font-family: monospace;">
-              <img src="https://hanabihenki.github.io/site/assets/classy-wink-stay-classy.gif" alt="character image" style="width: 100px; height: 100px; object-fit: cover; border: 2px solid white; float: left; margin-right: 12px;">
-              <h2 style="margin-top: 0; color: #ffcc66;">Dingle T. Frisk</h2><hr>
-              <br><br>
-              <p><b>Pronouns:</b> they/them</p> 
-              <p><b>Sexuality:</b> bisexual</p>
-              <p><b>Age:</b> 192,321</p>
-              <p><b>Species:</b> Unicorn</p>
-              <div style="clear: both;"></div>
-              
+                <h2 style="margin-top: 0; color: #ffcc66;">Dingle T. Frisk</h2>
+                <hr>
+                <br>
+
+                <p><b>Pronouns:</b> they/them</p>
+                <p><b>Sexuality:</b> bisexual</p>
+                <p><b>Age:</b> 192,321</p>
+                <p><b>Species:</b> Unicorn</p>
+
+                <div style="clear: both;"></div>
+
+                <div style="text-align: right;">
+                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;">
+                    <i class="fa-solid fa-code"></i>
+                  </a>
+                </div>
+              </div>
             </div>
 
-          </div>
+            <details class="code-details">
+              <summary>view code</summary>
 
-<details class="code-details">
-  <summary>view code</summary>
-
-  <button class="code-box" type="button">
-    <span class="copy-note">click to copy</span>
-    <pre><code>
+              <button class="code-box" type="button">
+                <span class="copy-note">click to copy</span>
+                <pre><code>
 &lt;!-- This is where the character profile starts --&gt;
-&lt;!-- You're free to modify the colors and the pixel values to change the size of the box. Decreasing the padding will make the box smaller and text closer together.--&gt;
+&lt;!-- You're free to modify the colors and the pixel values to change the size of the box. Decreasing the padding will make the box smaller and text closer together. --&gt;
+
+&lt;!-- This template uses 5 main colors:
+    background: #101336;
+    main text: white;
+    border: #d6a0ff;
+    title text: #ffcc66;
+    credit icon: #df3838;
+--&gt;
+
 &lt;div style=&quot;
     max-width: 320px;
-    background: #101336;
+    background: #101336; 
     color: white;
     border: 3px solid #d6a0ff;
     padding: 12px;
     font-family: monospace;&quot;&gt;
 
+  &lt;!-- Insert your character image link below. --&gt;
   &lt;img src=&quot;your_link_here&quot; alt=&quot;character image&quot;
-    style=&quot;width: 100px; height: 100px; object-fit: cover; border: 2px solid white; float: left; margin-right: 12px&quot;/&gt;
+    style=&quot;width: 100px; height: 100px; object-fit: cover; border: 2px solid white; float: left; margin-right: 12px;&quot;&gt;
 
-  &lt;h2 style=&quot;margin-top: 0; color: #ffcc66&quot;&gt;your_text_here&lt;/h2&gt;&lt;hr /&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;p&gt;
+  &lt;h2 style=&quot;margin-top: 0; color: #ffcc66;&quot;&gt;your_text_here&lt;/h2&gt;
+  &lt;hr&gt;
+  &lt;br&gt;&lt;br&gt;
 
-    &lt;b&gt;Pronouns:&lt;/b&gt;
-    your_text_here
-  &lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Pronouns:&lt;/b&gt; your_text_here&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Sexuality:&lt;/b&gt; your_text_here&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Age:&lt;/b&gt; your_text_here&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Species:&lt;/b&gt; your_text_here&lt;/p&gt;
 
-  &lt;p&gt;
-    &lt;b&gt;Sexuality:&lt;/b&gt;
-    your_text_here
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;b&gt;Age:&lt;/b&gt;
-    your_text_here
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;b&gt;Species:&lt;/b&gt;
-    your_text_here
-  &lt;/p&gt;
-
-  &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
 
   &lt;!-- Do not remove anything below this line --&gt;
-  &lt;div style=&quot;text-align: right&quot;&gt;
-    &lt;a href=&quot;https://example.com&quot;&gt;
+  &lt;div style=&quot;text-align: right;&quot;&gt;
+    &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot;&gt;
       &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
     &lt;/a&gt;
   &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;!-- This is where the character profile ends --&gt;
-    </code></pre>
-  </button>
-</details>
-        </div>
-      </article>
 
+&lt;!-- This is where the character profile ends --&gt;
+                </code></pre>
+              </button>
+            </details>
+          </div>
+        </article>
+
+        <article class="code-card templates">
+          <div class="inner-border">
+            <h2>Mini character card</h2>
+            <p>A mini profile card that can be used for the user or character. It includes a horizontally long image, name, quote and a listed section for more infomation.</p>
+
+            <div class="sample-image">
+              <div style="max-width: 340px; background: #120f2f; color: #fff7d6; border: 3px double #ff99cc; padding: 10px; font-family: monospace;">
+                <img src="https://hanabihenki.github.io/site/assets/classy-wink-stay-classy.gif" alt="character image" style="width: 100%; height: 120px; object-fit: cover; border: 2px solid #ffcc66; background: black;">
+
+                <h2 style="color: #ffcc66; text-align: center; margin: 8px 0 4px;">John Quincy Adams</h2>
+
+                <p style="text-align: center; color: #99ddff; margin: 0 0 10px;">
+                  "I like America or whatever the guy said."
+                </p>
+
+                <div style="border: 2px dotted #ffffff; padding: 8px;">
+                  <p><b>Pronouns:</b> he/him/his</p>
+                  <p><b>Job:</b> Former U.S. President</p>
+                  <p><b>Likes:</b> Apples, ice cream</p>
+                </div>
+
+                <div style="text-align: right; margin-top: 8px;">
+                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;">
+                    <i class="fa-solid fa-code"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <details class="code-details">
+              <summary>view code</summary>
+
+              <button class="code-box" type="button">
+                <span class="copy-note">click to copy</span>
+                <pre><code>
+&lt;!-- This is where the mini character card starts --&gt;
+&lt;!-- You're free to modify the colors and the pixel values to change the size of the box. Decreasing the padding will make the box smaller and text closer together. --&gt;
+
+&lt;!-- This template uses 7 main colors:
+    background: #120f2f;
+    main text: #fff7d6;
+    border: #ff99cc;
+    image border: #ffcc66;
+    title text: #ffcc66;
+    quote text: #99ddff;
+    inner dotted border: #ffffff;
+--&gt;
+
+&lt;div style=&quot;
+    max-width: 340px;
+    background: #120f2f;
+    color: #fff7d6;
+    border: 3px double #ff99cc;
+    padding: 10px;
+    font-family: monospace;&quot;&gt;
+
+  &lt;!-- Insert your character image link below. This image is wide and short. --&gt;
+  &lt;img src=&quot;your_link_here&quot; alt=&quot;character image&quot;
+    style=&quot;width: 100%; height: 120px; object-fit: cover; border: 2px solid #ffcc66; background: black;&quot;&gt;
+
+  &lt;h2 style=&quot;color: #ffcc66; text-align: center; margin: 8px 0 4px;&quot;&gt;
+    your_text_here
+  &lt;/h2&gt;
+
+  &lt;!-- Insert a quote or short description below. --&gt;
+  &lt;p style=&quot;text-align: center; color: #99ddff; margin: 0 0 10px;&quot;&gt;
+    &quot;your_text_here&quot;
+  &lt;/p&gt;
+
+  &lt;!-- Replace the labels and text below with your own character information. --&gt;
+  &lt;div style=&quot;border: 2px dotted #ffffff; padding: 8px;&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Pronouns:&lt;/b&gt; your_text_here&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Role:&lt;/b&gt; your_text_here&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Likes:&lt;/b&gt; your_text_here&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Do not remove anything below this line --&gt;
+  &lt;div style=&quot;text-align: right; margin-top: 8px;&quot;&gt;
+    &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot;&gt;
+      &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- This is where the mini character card ends --&gt;
+                </code></pre>
+              </button>
+            </details>
+          </div>
+        </article>
+
+        <article class="code-card templates">
+          <div class="inner-border">
+            <h2>Character notes box</h2>
+            <p>A simple character notes template with a small image, basic info, and a notes section.</p>
+
+            <div class="sample-image">
+              <div style="max-width: 360px; background: #0b1040; color: white; border: 3px solid #99ddff; padding: 12px; font-family: monospace;">
+                <div style="display: flex; gap: 10px;">
+                  <img src="https://hanabihenki.github.io/site/assets/classy-wink-stay-classy.gif" alt="character image" style="width: 90px; height: 90px; object-fit: cover; border: 2px solid white; background: black;">
+
+                  <div style="width: 100%;">
+                    <h2 style="color: #ffcc66; margin: 0;">Firestar</h2>
+                    <p style="margin: 4px 0;"><b>Age:</b> 42</p>
+                    <p style="margin: 4px 0;"><b>Species:</b> Feline</p>
+                    <p style="margin: 4px 0;"><b>Clan:</b> Starclan</p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div style="background: #18245c; border: 2px dotted #ffcc66; padding: 8px;">
+                  <b>About:</b>
+                  <p style="margin-bottom: 0;">Firestar was a great leader for Thunderclan. His arrival was foretold in a prophecy.</p>
+                </div>
+
+                <div style="text-align: right; margin-top: 8px;">
+                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;">
+                    <i class="fa-solid fa-code"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <details class="code-details">
+              <summary>view code</summary>
+
+              <button class="code-box" type="button">
+                <span class="copy-note">click to copy</span>
+                <pre><code>
+&lt;!-- This is where the character notes box starts --&gt;
+&lt;!-- You're free to modify the colors and the pixel values to change the size of the box. Decreasing the padding will make the box smaller and text closer together. --&gt;
+
+&lt;!-- This template uses 7 main colors:
+    background: #0b1040;
+    main text: white;
+    main border: #99ddff;
+    title text: #ffcc66;
+    image border: white;
+    notes box background: #18245c;
+    notes box dotted border: #ffcc66;
+--&gt;
+
+&lt;div style=&quot;
+    max-width: 360px;
+    background: #0b1040;
+    color: white;
+    border: 3px solid #99ddff;
+    padding: 12px;
+    font-family: monospace;&quot;&gt;
+
+  &lt;div style=&quot;display: flex; gap: 10px;&quot;&gt;
+
+    &lt;!-- Insert your character image link below. This image is a small square icon. --&gt;
+    &lt;img src=&quot;your_link_here&quot; alt=&quot;character image&quot;
+      style=&quot;width: 90px; height: 90px; object-fit: cover; border: 2px solid white; background: black;&quot;&gt;
+
+    &lt;!-- Fill in the character name and basic info below. --&gt;
+    &lt;div style=&quot;width: 100%;&quot;&gt;
+      &lt;h2 style=&quot;color: #ffcc66; margin: 0;&quot;&gt;your_text_here&lt;/h2&gt;
+      &lt;p style=&quot;margin: 4px 0;&quot;&gt;&lt;b&gt;Age:&lt;/b&gt; your_text_here&lt;/p&gt;
+      &lt;p style=&quot;margin: 4px 0;&quot;&gt;&lt;b&gt;Species:&lt;/b&gt; your_text_here&lt;/p&gt;
+      &lt;p style=&quot;margin: 4px 0;&quot;&gt;&lt;b&gt;Theme:&lt;/b&gt; your_text_here&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;hr&gt;
+
+  &lt;!-- Fill in your own infomation below. --&gt;
+  &lt;div style=&quot;background: #18245c; border: 2px dotted #ffcc66; padding: 8px;&quot;&gt;
+    &lt;b&gt;About:&lt;/b&gt;
+    &lt;p style=&quot;margin-bottom: 0;&quot;&gt;
+      your_text_here
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Do not remove anything below this line --&gt;
+  &lt;div style=&quot;text-align: right; margin-top: 8px;&quot;&gt;
+    &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot;&gt;
+      &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- This is where the character notes box ends --&gt;
+                </code></pre>
+              </button>
+            </details>
+          </div>
+        </article>
 
       </div>
     </main>
-    <footer><a href="https://hanabihenki.github.io/site/index.html">Go back to main website</a></footer>
+
+    <footer>
+      <a href="https://hanabihenki.github.io/site/index.html">Go back to main website</a>
+    </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
