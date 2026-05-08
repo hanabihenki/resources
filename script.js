@@ -1,197 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+(function () {
+  var starField = document.createElement('div');
+  starField.id = 'star-field';
+  starField.setAttribute('aria-hidden', 'true');
+  document.body.insertBefore(starField, document.body.firstChild);
 
-  <title>Ray's Coding Vault</title>
-  <meta name="keywords" content="HTML, CSS, JavaScript, coding resources, beginner coding, website templates, Toyhouse coding, Neocities coding, art fight, af, th, nc, coding tips, web design, front-end development, coding tutorials, coding examples, code snippets, web resources">
-  <meta property="og:title" content="Ray's Coding Vault">
-  <meta property="og:description" content="A simple coding resource website for HTML, CSS, JS, templates, and web resources.">
-  <meta property="og:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
-  <meta property="og:url" content="https://hanabihenki.github.io/resources/index.html">
-  <meta property="og:type" content="website">
+  var starCount = 155;
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ray's Coding Vault">
-  <meta name="twitter:description" content="A coding resource website for HTML, CSS, JS, templates, and web resources.">
-  <meta name="twitter:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
+  for (var i = 0; i < starCount; i++) {
+    var star = document.createElement('span');
+    var size = Math.random() > 0.92 ? 3 : Math.random() > 0.62 ? 2 : 1;
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="star-field"></div>
+    star.className = 'star';
+    if (size === 3) {
+      star.className += ' big-star';
+    }
 
-  <aside class="side-nav">
-    <div class="nav-title">Ray's<br>Coding<br>Vault</div>
-    <nav>
-      <a class="" href="index.html">home</a>
-      <a class="" href="html.html">html</a>
-      <a class="" href="css.html">css</a>
-      <a class="active" href="js.html">js</a>
-      <a class="" href="templates.html">templates</a>
-      <a class="" href="resources.html">resources</a>
-    </nav>
-  </aside>
+    star.style.left = (Math.random() * 100) + '%';
+    star.style.top = (Math.random() * 100) + '%';
+    star.style.setProperty('--star-size', size + 'px');
+    star.style.setProperty('--star-speed', (0.9 + Math.random() * 3.2) + 's');
+    star.style.setProperty('--star-delay', (Math.random() * 4) + 's');
 
-  <div class="page-wrap">
-    <main>
-      <h1 class="page-title js-title">JS</h1>
-      <p class="intro">JavaScript adds animation and interactivity to web pages. Most sites don't allow JavaScript since it can be used for nefarious purposes. Neocities is one of the websites that allow JS.
-<br><br>
-For JS to work, it needs to be added in a script tag. I recommend putting the script tag at the bottom of the website to keep it all in one place.
-      </p>
+    starField.appendChild(star);
+  }
+}());
 
-      <hr><hr><br>
+var codeBoxes = document.querySelectorAll('.code-box');
 
-      <div class="card-grid">
+function copyText(text, note) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text);
+  }
 
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Alert button</h2>
-            <p>A pop up message appears when a button is pressed.</p>
+  var textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.style.position = 'fixed';
+  textarea.style.left = '-9999px';
+  document.body.appendChild(textarea);
+  textarea.focus();
+  textarea.select();
 
-            <div class="sample-image">
-              <button type="button" onclick="alert('Ahh! Scary pop up!')">
-                click me
-              </button>
-            </div>
+  try {
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    return Promise.resolve();
+  } catch (error) {
+    document.body.removeChild(textarea);
+    return Promise.reject(error);
+  }
+}
 
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;button onclick=&quot;alert('Replace_with_your_text')&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
+for (var i = 0; i < codeBoxes.length; i++) {
+  codeBoxes[i].addEventListener('click', function () {
+    var code = this.querySelector('code').innerText;
+    var note = this.querySelector('.copy-note');
 
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Change background color</h2>
-            <p>This changes the page background color when someone clicks a button. JavaScript can be used to change CSS properties.</p>
-
-            <div class="sample-image">
-              <button type="button" onclick="document.body.style.backgroundColor = '#18245c'">
-                change background
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;button onclick=&quot;document.body.style.backgroundColor = '#18245c'&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Change text</h2>
-            <p>This changes the text on the page when a button is clicked. Who knew!</p>
-
-            <div class="sample-image">
-              <p id="demo-text">Click me!</p>
-              <button type="button" onclick="document.getElementById('demo-text').innerHTML = 'Ahhh! No! Change it back!'">
-                change text
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;p id=&quot;demo-text&quot;&gt;Replace_with_your_text&lt;/p&gt;
-
-&lt;button onclick=&quot;document.getElementById('demo-text').innerHTML = 'Replace_with_your_text'&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Hide and show</h2>
-            <p>This hides or shows text when a button is clicked.</p>
-
-            <div class="sample-image">
-              <p id="secret-text">Tuck me away</p>
-              <button type="button" onclick="document.getElementById('secret-text').style.display = 'none'">
-                hide text
-              </button>
-              <button type="button" onclick="document.getElementById('secret-text').style.display = 'block'">
-                show text
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;p id=&quot;secret-text&quot;&gt;Replace_with_your_text&lt;/p&gt;
-
-&lt;button onclick=&quot;document.getElementById('secret-text').style.display = 'none'&quot;&gt;
-  hide
-&lt;/button&gt;
-
-&lt;button onclick=&quot;document.getElementById('secret-text').style.display = 'block'&quot;&gt;
-  show
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Change image</h2>
-            <p>This changes an image when a button is clicked. </p>
-
-            <div class="sample-image">
-              <img id="change-image-demo" src="https://hanabihenki.github.io/site/assets/classy-wink-stay-classy.gif" alt="example image" width="100">
-              <br><br>
-              <button type="button" onclick="document.getElementById('change-image-demo').src = 'https://static.wikia.nocookie.net/jerma-lore/images/e/ef/Soypogsundae.png'">
-                change image
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;img id=&quot;my-image&quot; src=&quot;first-image.png&quot; alt=&quot;Replace_with_your_text&quot; width=&quot;100&quot;&gt;
-
-&lt;button onclick=&quot;document.getElementById('my-image').src = 'second-image.png'&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Random number</h2>
-            <p>This creates a random number when a button is clicked.</p>
-
-            <div class="sample-image">
-              <p id="random-number">Your number will appear here.</p>
-              <button type="button" onclick="document.getElementById('random-number').innerHTML = Math.floor(Math.random() * 10) + 1">
-                random number
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;p id=&quot;random-number&quot;&gt;Replace_with_your_text&lt;/p&gt;
-
-&lt;button onclick=&quot;document.getElementById('random-number').innerHTML = Math.floor(Math.random() * 10) + 1&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-      </div>
-    </main>
-
-    <footer><a href="https://hanabihenki.github.io/site/index.html">Go back to main website</a></footer>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    copyText(code, note).then(function () {
+      note.innerText = 'copied!';
+      setTimeout(function () {
+        note.innerText = 'click code to copy';
+      }, 1200);
+    }).catch(function () {
+      note.innerText = 'copy failed, select text';
+      setTimeout(function () {
+        note.innerText = 'click code to copy';
+      }, 1600);
+    });
+  });
+}
