@@ -4,193 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" href="assets/raylogo-32.png" type="image/png">
+  <link rel="icon" href="assets/raylogo-32.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/raylogo-180.png">
 
   <title>Ray's Coding Vault</title>
-  <meta name="keywords" content="HTML, CSS, JavaScript, coding resources, beginner coding, website templates, Toyhouse coding, Neocities coding, art fight, af, th, nc, coding tips, web design, front-end development, coding tutorials, coding examples, code snippets, web resources">
+<meta name="keywords" content="HTML, CSS, JavaScript, coding resources, beginner coding, website templates, Toyhouse coding, Neocities coding, art fight, af, th, nc, coding tips, web design, front-end development, coding tutorials, coding examples, code snippets, web resources">
   <meta property="og:title" content="Ray's Coding Vault">
   <meta property="og:description" content="A simple coding resource website for HTML, CSS, JS, templates, and web resources.">
-  <meta property="og:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
+  <meta property="og:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
   <meta property="og:url" content="https://hanabihenki.github.io/resources/index.html">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ray's Coding Vault">
   <meta name="twitter:description" content="A coding resource website for HTML, CSS, JS, templates, and web resources.">
-  <meta name="twitter:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
+  <meta name="twitter:image" content="assets/Screenshot 2026-05-08 at 1.49.26 AM.png">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="star-field"></div>
-
   <aside class="side-nav">
     <div class="nav-title">Ray's<br>Coding<br>Vault</div>
     <nav>
-      <a class="" href="index.html">home</a>
+      <a class="active" href="index.html">home</a>
       <a class="" href="html.html">html</a>
       <a class="" href="css.html">css</a>
-      <a class="active" href="js.html">js</a>
+      <a class="" href="js.html">js</a>
       <a class="" href="templates.html">templates</a>
       <a class="" href="resources.html">resources</a>
     </nav>
   </aside>
-
   <div class="page-wrap">
     <main>
-      <h1 class="page-title js-title">JS</h1>
-      <p class="intro">JavaScript adds animation and interactivity to web pages. Most sites don't allow JavaScript since it can be used for nefarious purposes. Neocities is one of the websites that allow JS.
-<br><br>
-For JS to work, it needs to be added in a script tag. I recommend putting the script tag at the bottom of the website to keep it all in one place.
-      </p>
+      <section class="home-page">
+        <div class="welcome-box">
+          <h1>Welcome to Ray's Coding Vault</h1>
+          <p class="subtitle">
+            My main passion is in visual art. However, over the years I have gained knowledge in coding and web design. I created this site to share what I've learned and to provide an easily accessable resource, or vault, for everyone to use in their coding projects. I specialize in front-end design mainly using HTML, CSS and JS.
+            
+            <br><br>
+            This website is intended for multiple websites so some resources may not work on all platforms. Artfight, Neocities, Tumblr, and Toyhouse all have different rules and limitations for what code is allowed to be used. I have tried to make my code simple enough to be allowed for most websites but some mistakes may have been made. If you find code that doesn't workor an error, please message me on <a class="inline-links" href="https://bsky.app/profile/hanabihenki.bsky.social">Bluesky</a> or <a class="inline-links" href="https://x.com/azurazar">Twitter</a>.
+            <br><br>
+            click to view more infomation
+          </p>
 
-      <hr><hr><br>
-
-      <div class="card-grid">
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Alert button</h2>
-            <p>A pop up message appears when a button is pressed.</p>
-
-            <div class="sample-image">
-              <button type="button" onclick="alert('Ahh! Scary pop up!')">
-                click me
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;button onclick=&quot;alert('Replace_with_your_text')&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
+          <div class="home-buttons">
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="js.html">JS</a>
+            <a href="templates.html">templates</a>
           </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Change background color</h2>
-            <p>This changes the page background color when someone clicks a button. JavaScript can be used to change CSS properties.</p>
-
-            <div class="sample-image">
-              <button type="button" onclick="document.body.style.backgroundColor = '#18245c'">
-                change background
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;button onclick=&quot;document.body.style.backgroundColor = '#18245c'&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Change text</h2>
-            <p>This changes the text on the page when a button is clicked. Who knew!</p>
-
-            <div class="sample-image">
-              <p id="demo-text">Click me!</p>
-              <button type="button" onclick="document.getElementById('demo-text').innerHTML = 'Ahhh! No! Change it back!'">
-                change text
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;p id=&quot;demo-text&quot;&gt;Replace_with_your_text&lt;/p&gt;
-
-&lt;button onclick=&quot;document.getElementById('demo-text').innerHTML = 'Replace_with_your_text'&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Hide and show</h2>
-            <p>This hides or shows text when a button is clicked.</p>
-
-            <div class="sample-image">
-              <p id="secret-text">Tuck me away</p>
-              <button type="button" onclick="document.getElementById('secret-text').style.display = 'none'">
-                hide text
-              </button>
-              <button type="button" onclick="document.getElementById('secret-text').style.display = 'block'">
-                show text
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;p id=&quot;secret-text&quot;&gt;Replace_with_your_text&lt;/p&gt;
-
-&lt;button onclick=&quot;document.getElementById('secret-text').style.display = 'none'&quot;&gt;
-  hide
-&lt;/button&gt;
-
-&lt;button onclick=&quot;document.getElementById('secret-text').style.display = 'block'&quot;&gt;
-  show
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Change image</h2>
-            <p>This changes an image when a button is clicked. </p>
-
-            <div class="sample-image">
-              <img id="change-image-demo" src="https://hanabihenki.github.io/site/assets/classy-wink-stay-classy.gif" alt="example image" width="100">
-              <br><br>
-              <button type="button" onclick="document.getElementById('change-image-demo').src = 'https://static.wikia.nocookie.net/jerma-lore/images/e/ef/Soypogsundae.png'">
-                change image
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;img id=&quot;my-image&quot; src=&quot;first-image.png&quot; alt=&quot;Replace_with_your_text&quot; width=&quot;100&quot;&gt;
-
-&lt;button onclick=&quot;document.getElementById('my-image').src = 'second-image.png'&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-        <article class="code-card js">
-          <div class="inner-border">
-            <h2>Random number</h2>
-            <p>This creates a random number when a button is clicked.</p>
-
-            <div class="sample-image">
-              <p id="random-number">Your number will appear here.</p>
-              <button type="button" onclick="document.getElementById('random-number').innerHTML = Math.floor(Math.random() * 10) + 1">
-                random number
-              </button>
-            </div>
-
-            <button class="code-box" type="button">
-              <span class="copy-note">click to copy</span>
-              <pre><code>&lt;p id=&quot;random-number&quot;&gt;Replace_with_your_text&lt;/p&gt;
-
-&lt;button onclick=&quot;document.getElementById('random-number').innerHTML = Math.floor(Math.random() * 10) + 1&quot;&gt;
-  Replace_with_your_text
-&lt;/button&gt;</code></pre>
-            </button>
-          </div>
-        </article>
-
-      </div>
+        </div>
+        <a class="resource-bar" href="resources.html">click to view a list of external resource websites</a>
+      </section>
+      <br> <br>
+<hr>
+       <br>
     </main>
+        <center>
+<!-- Start HTML Code --><iframe style="WIDTH:500px;HEIGHT:200px;border:0px;" title="Guestbook" src="https://guestbook.me/start.html?uid=o2p8p86d1zdo" referrerpolicy="unsafe-url"></iframe><div id="sbLinks"><a href="https://guestbook.me">Guestbook Widget</a><br><a href="https://guestbook.me/NgaiChunCheung.png">Thousand Cranes</a>: 11069 Cranes, 161 Days, 22 Cities, Oct 2013 - Aug 2019 by Ngai Chun Cheung<br><a href="https://cheung.me">Ngai Chun Cheung</a>: Ngai Chun Cheung folded more than 10.000 origami cranes in less than 6 years<br><a href="https://www.youtube.com/watch?v=mFNoWV9h2Uo">Thousand Cranes</a>: Leaving a trail of thousand origami cranes by Ngai Chun Cheung (* 1986, Germany)<br><a href="https://www.youtube.com/user/CheungNgaiChun">YouTube</a><br><a href="https://www.facebook.com/ngaichuncheung/">Facebook</a><br><a href="https://x.com/NgaiChunCheung">Twitter/X</a><br><a href="https://checked.me">checked.me by Ngai Chun Cheung</a><br><a href="https://digitalisiert.com">digitalisiert.com by Ngai Chun Cheung</a><br><a href="https://bekleidet.com">bekleidet.com by Ngai Chun Cheung</a><br><a href="https://lounges.me">lounges.me by Ngai Chun Cheung</a></div><script>document.getElementById("sbLinks").style.display='none';</script><!-- End HTML Code -->
+<br>
+    
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fhanabihenki.github.io%2Fresources%2Findex.html"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fhanabihenki.github.io%2Fresources%2Findex.html&label=Total%20Visitors&labelColor=%23697689&countColor=%23263759&style=plastic" /></a>
+</center>
+
     <footer>
       <a href="https://hanabihenki.github.io/site/index.html">Go back to main website</a>
     </footer>
