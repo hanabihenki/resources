@@ -568,3 +568,32 @@ footer a:hover {
 .code-details .code-box {
   margin-top: 10px;
 }
+
+.resource-jump-buttons {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  text-align: center;
+  background: #101336;
+  border: 2px dotted #ffcc66;
+  padding: 12px;
+}
+
+.resource-jump-buttons a {
+  display: inline-block;
+  color: #020617;
+  background: #99ddff;
+  border: 3px outset #ffffff;
+  padding: 8px 10px;
+  margin: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.resource-jump-buttons a:hover,
+.resource-jump-buttons a:focus-visible {
+  background: #ff99cc;
+  color: #000000;
+  transform: translateY(-4px) rotate(-2deg);
+  box-shadow: 4px 4px 0 #000000, 0 0 12px #ffcc66;
+}
