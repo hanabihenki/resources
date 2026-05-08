@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Rays Coding Vault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="star-field"></div>
+
+  <aside class="side-nav">
+    <div class="nav-title">Ray's<br>Coding<br>Vault</div>
+    <nav>
+      <a class="" href="index.html">home</a>
+      <a class="active" href="html.html">html</a>
+      <a class="" href="css.html">css</a>
+      <a class="" href="js.html">js</a>
+      <a class="" href="templates.html">templates</a>
+      <a class="" href="resources.html">resources</a>
+    </nav>
+  </aside>
+
+  <div class="page-wrap">
+    <main>
+      <h1 class="page-title html-title">HTML</h1>
+      <p class="intro">HTML is the spine for every web page you see. Because of this, many websites allow for HTML code to be used to customize. A "tag" is a piece of HTML code, you will see me say "tag" often on this page.</p>
+<hr><hr><br>
+      <div class="card-grid">
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Paragraph text</h2>
+            <p>This is one of the most important tags in HTML. It allows you to put text on your page. The look of the text can be changed with CSS.</p>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;p&gt;
+  Replace_with_your_text
+&lt;/p&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Heading 1</h2>
+            <p>heading tags change the size and thickness of text. It starts out at h1 and ends at h6. H6 text looks like basic paragraph text. H1 is good for titles, h2 for section headings, h3 for subsection headings, h4 for sub-subsection headings, and so on. The look of the h tags can be changed with CSS. As you can see here, my h1 and h2 text are completely different colors.</p>
+            <div class="sample-image">
+              <h1>Title text</h1>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;h1&gt;Replace_with_your_text&lt;/h1&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Heading 2</h2>
+            <p>The h2 tag makes text smaller than the h1 text.</p>
+            <div class="sample-image">
+              <h2>Section heading text</h2>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;h2&gt;Replace_with_your_text&lt;/h2&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Heading 3</h2>
+            <p>The h3 tag makes smaller text but it's still bigger than p text.</p>
+            <div class="sample-image">
+              <h3>Funny</h3>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;h3&gt;Replace_with_your_text&lt;/h3&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Div container</h2>
+            <p>The div tag is a container. It does not do much by itself, but it is useful for grouping text, images, buttons, or other HTML together so you can style them with CSS. This get more useful if you style it with CSS. Most websites online is just a bunch of div tags.</p>
+            <div class="sample-image">
+              <div>
+                Nothing much to show here.
+              </div>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;div&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Link</h2>
+            <p>The a tag creates a hyperlink to another webpage.</p>
+            <div class="sample-image">
+              <a class="inline-links" href="index.html" target="_blank">Lets go back to the home page</a>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;a href=&quot;https://example.com&quot;&gt;Replace_with_your_text&lt;/a&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Image</h2>
+            <p>The img tag adds an image to your page. For websites that don't allow file uploads for code, you need to make the img src a webpage. The alt= is there to provide alternative text if the image fails to load or for screen reading devices.</p>
+            <div class="sample-image">
+              <img src="https://hanabihenki.github.io/site/assets/classy-wink-stay-classy.gif" alt="The image didn't load!" width="100">
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;img src=&quot;https://hanabihenki.github.io/site/assets/classy-wink-stay-classy.gif&quot; alt=&quot;The image failed to load.&quot;&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Unordered list</h2>
+            <p>The ul and li tags make a bullet list. The bullets for the list can be changed with CSS.</p>
+            <div class="sample-image">
+              <ul>
+                <li>Apples</li>
+                <li>Oranges</li>
+              </ul>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;ul&gt;
+  &lt;li&gt;Replace_with_your_text&lt;/li&gt;
+  &lt;li&gt;Replace_with_your_text&lt;/li&gt;
+  &lt;li&gt;Replace_with_your_text&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Ordered list</h2>
+            <p>The ol and li tags make a numbered list. This is my personal ranking of what fruits I like. How the list looks can be changed with CSS.</p>
+            <div class="sample-image">
+              <ol>
+                <li>Kiwis</li>
+                <li>Raspberries</li>
+                <li>Strawberries</li>
+              </ol>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;ol&gt;
+  &lt;li&gt;Replace_with_your_text&lt;/li&gt;
+  &lt;li&gt;Replace_with_your_text&lt;/li&gt;
+  &lt;li&gt;Replace_with_your_text&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Audio controls</h2>
+            <p>The audio tag is a bit tricky on websites that don't allow file uploads for code, such as Toyhouse and Artfight. Use the audio controller resource in the resources tab if you want an audio player in your non-uploading allowed websites.</p>
+            <div class="sample-image">
+              <audio controls>
+                <source src="audio-file.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;audio controls&gt;
+  &lt;source src=&quot;audio-file.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Button</h2>
+            <p>The button tag creates a clickable button. The design can be changed using CSS.</p>
+            <div class="sample-image">
+              <button type="button">This button does nothing!</button>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;button type=&quot;button&quot;&gt;Replace_with_your_text&lt;/button&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Details + Summary</h2>
+            <p>Details and summary allow for a collapsable piece of text. Good if you want to spoiler anything!</p>
+            <div class="sample-image">
+              <details>
+                <summary>click here to open</summary>
+                <p>Peek a boo!</p>
+              </details>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;details&gt;
+&lt;summary&gt;Shown_replace_with_your_text&lt;/summary&gt;
+  &lt;p&gt;Hidden_Replace_with_your_text&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Bold text</h2>
+            <p>The b tag makes text bold.</p>
+            <div class="sample-image">
+              <b>Bazooka</b>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;b&gt;Replace_with_your_text&lt;/b&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Strong text</h2>
+            <p>The strong tag makes text bold. It's the same as the b tag.</p>
+            <div class="sample-image">
+              <strong>Bazooka but better</strong>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;strong&gt;Replace_with_your_text&lt;/strong&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Italic text</h2>
+            <p>The i tag makes text italic (leaning).</p>
+            <div class="sample-image">
+              <i>I don't have anything funny to put here.</i>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;i&gt;Replace_with_your_text&lt;/i&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Emphasized text</h2>
+            <p>The em tag makes text italic. It's literally the same thing as the i tag. I don't know why this and strong exsist.</p>
+            <div class="sample-image">
+              <em>Insert funny joke</em>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;em&gt;Replace_with_your_text&lt;/em&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Small text</h2>
+            <p>The small tag makes text smaller.</p>
+            <div class="sample-image">
+              <small>I like Pink Floyd.</small>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;small&gt;Replace_with_your_text&lt;/small&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Mark</h2>
+            <p>The mark tag highlights text. You can change the highlight color with CSS.</p>
+            <div class="sample-image">
+              <p>This is not important.<mark>But this is!</mark> Oh it's not important again.</p>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;mark&gt; Replace_with_your_text &lt;/mark&gt;</code></pre>
+            </button>
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS to change color of highlight</span>
+              <pre><code>mark { background-color: yellow; color: black; }</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Inserted text</h2>
+            <p>The ins tag underlines text.</p>
+            <div class="sample-image">
+              <ins>Replace_with_your_text</ins>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;ins&gt;Replace_with_your_text&lt;/ins&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Deleted text</h2>
+            <p>The del tag crosses out text.</p>
+            <div class="sample-image">
+              <del>NOO Don't delete me please!</del>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;del&gt;Replace_with_your_text&lt;/del&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Line break</h2>
+            <p>The br tag create a line break. It adds a gap between the first part of text and the next part of text below.</p>
+            <div class="sample-image">
+              Top Text<br>
+              Bottom Text
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;br&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Horizontal line</h2>
+            <p>The hr tag creates a horizontal line.</p>
+            <div class="sample-image">
+              Text above the line
+              <hr>
+              Text below the line
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;hr&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Blockquote</h2>
+            <p>The blockquote tag is used for quotes. It basically indents the text.</p>
+            <div class="sample-image">
+              <blockquote>And I was like, "That's what she said!"</blockquote>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;blockquote&gt;Replace_with_your_text&lt;/blockquote&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Code text</h2>
+            <p>The code tag makes text look like code by changing the font to something commonly seen in programming.</p>
+            <div class="sample-image">
+              <code>I don't know what the name of the font is but it's an easy way to change fonts without using css!</code>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;code&gt;Replace_with_your_text&lt;/code&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Preformatted text</h2>
+            <p>The pre tag keeps spaces and line breaks. So basically if you don't want your text to be reformatted to fit the browser or CSS, use this. It's good for ascii art or if you have a specific layout for your text.</p>
+            <div class="sample-image">
+              <pre> /\_/\
+( o.o )
+ > ^ < </pre>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;pre&gt;Replace_with_your_text
+  Replace_with_your_text
+    Replace_with_your_text&lt;/pre&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Subscript text</h2>
+            <p>The sub tag makes text sit lower and makes it smaller, like in H₂O.</p>
+            <div class="sample-image">
+              Normal text<sub>small text</sub>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;sub&gt;Replace_with_your_text&lt;/sub&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Superscript text</h2>
+            <p>The sup tag makes text sit higher, like exponents. I thought the sup tag was used for saying "wassup". :/</p>
+            <div class="sample-image">
+              Normal text<sup>small text</sup>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;sup&gt;Replace_with_your_text&lt;/sup&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Center</h2>
+            <p>The center tag centers text. Good for titles or important points.</p>
+            <div class="sample-image">
+              <center>Eclipse first, the rest nowhere.</center>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;center&gt;Replace_with_your_text&lt;/center&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Bdo</h2>
+            <p>The bdo tag reverses the direction of text. Use <code>dir="rtl"</code> to make it read right to left.</p>
+            <div class="sample-image">
+              <bdo dir="rtl">I can't wait for Neo Universe to release on the global version of Umamusume!</bdo>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;bdo dir=&quot;rtl&quot;&gt;Replace_with_your_text&lt;/bdo&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Marquee</h2>
+            <p>The marquee tag makes scrolling text. It was popular for older websites, so if you're going for that retro or y2k aesthetic then it's perfect.</p>
+            <div class="sample-image">
+              <marquee>★ Michael! Don't leave me here! Michael! Michael! Help me- ★</marquee>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;marquee&gt;
+  Replace_with_your_text
+&lt;/marquee&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Select + Option</h2>
+            <p>The select and option tags create a dropdown menu. This can add a fun bit of interactivity to your website.</p>
+            <div class="sample-image">
+              <select>
+                <option>Strawberry</option>
+                <option>Blueberry</option>
+                <option>Starfruit</option>
+              </select>
+            </div>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;select&gt;
+  &lt;option&gt;Replace_with_your_text&lt;/option&gt;
+  &lt;option&gt;Replace_with_your_text&lt;/option&gt;
+  &lt;option&gt;Replace_with_your_text&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+
+        <article class="code-card html">
+          <div class="inner-border">
+            <h2>Template Page Shell</h2>
+            <p>A HTML template for web development.</p>
+            <button class="code-box" type="button">
+              <span class="copy-note">click to copy</span>
+              <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;my page&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;hello world&lt;/h1&gt;
+  &lt;p&gt;this is my first page.&lt;/p&gt;
+  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+
+      </div>
+      <script src="script.js"></script>
+    </main>
+  </div>
+</body>
+</html>

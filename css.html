@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Rays Coding Vault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="star-field"></div>
+
+  <aside class="side-nav">
+    <div class="nav-title">Ray's<br>Coding<br>Vault</div>
+    <nav>
+      <a class="" href="index.html">home</a>
+      <a class="" href="html.html">html</a>
+      <a class="active" href="css.html">css</a>
+      <a class="" href="js.html">js</a>
+      <a class="" href="templates.html">templates</a>
+      <a class="" href="resources.html">resources</a>
+    </nav>
+  </aside>
+
+  <div class="page-wrap">
+    <main>
+      <h1 class="page-title css-title">CSS</h1>
+      <p class="intro">CSS changes how the page looks. It can be used to change text, borders, fonts, layout, colors, backgrounds, and almost anything you can think of! Property is the word used for CSS code.
+<br><br>
+CSS can be applied in two ways. The first way is by using a CSS class. A class is defined in a style tag on the same page as the HTML, or on a separate CSS file within the website. The second way is by using an inline style inside an HTML tag. The easiest way to use CSS is by using it within a tag.
+<br>
+Example of a HTML tag with no CSS: &lt;p&gt;
+<br>Example of a HTML tag with CSS: &lt;p style=&quot;color: red;&quot;&gt;
+<br><br>
+Because of these two different methods, two different code boxes are provided for each CSS property. The top one is for CSS classes. The bottom one is for inline styles. I recommend the inline style for beginners.
+      </p>
+      <hr><hr><br>
+
+      <div class="card-grid">
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Color</h2>
+            <p>The color property changes the color of text. You can use color names, hex codes, RGB, or HSL.</p>
+            <div class="sample-image">
+              <p style="color: #ff99cc;">pink text</p>
+              <p style="color: #99ddff;">blue text</p>
+              <p style="color: yellow;">yellow text</p>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.colored-text {
+  color: #ff99cc;
+}
+
+/* other ways to write colors */
+.color-name {
+  color: pink;
+}
+
+.rgb-color {
+  color: rgb(255, 153, 204);
+}
+
+.hsl-color {
+  color: hsl(330, 100%, 80%);
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;p style=&quot;color: #ff99cc;&quot;&gt;
+  Replace_with_your_text
+&lt;/p&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Background color</h2>
+            <p>The background-color property changes the color behind text or inside a box.</p>
+            <div class="sample-image">
+              <div style="background-color: #0e8737; color: black; padding: 12px;">
+                Hey I don't like the color green!
+              </div>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.background-box {
+  background-color: #ffcc66;
+  color: black;
+  padding: 12px;
+}
+
+/* other color examples */
+.black-bg {
+  background-color: black;
+}
+
+.pink-bg {
+  background-color: pink;
+}
+
+.hex-bg {
+  background-color: #101336;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;div style=&quot;background-color: #ffcc66; color: black; padding: 12px;&quot;&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Font size</h2>
+            <p>The font-size property changes how big or small text is. Pixels is the easiest way to change text size since it's simple. Big number is big text.</p>
+            <div class="sample-image">
+              <p style="font-size: 12px;">small text</p>
+              <p style="font-size: 20px;">medium text</p>
+              <p style="font-size: 32px;">big text</p>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.small-text {
+  font-size: 12px;
+}
+
+.medium-text {
+  font-size: 20px;
+}
+
+.big-text {
+  font-size: 32px;
+}
+
+/* common units */
+.pixel-size {
+  font-size: 20px;
+}
+
+.percent-size {
+  font-size: 120%;
+}
+
+.em-size {
+  font-size: 1.5em;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;p style=&quot;font-size: 20px;&quot;&gt;
+  Replace_with_your_text
+&lt;/p&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Font family</h2>
+            <p>The font-family property changes the font used for text that is web safe. Meaning almost every web browser will support these fonts. In the CSS class code, common web safe fonts are listed.</p>
+            <div class="sample-image">
+              <p style="font-family: Arial, sans-serif;">Arial text</p>
+              <p style="font-family: 'Courier New', monospace;">Courier New text</p>
+              <p style="font-family: Georgia, serif;">Georgia text</p>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.font-example {
+  font-family: Arial, sans-serif;
+}
+
+/* common web safe fonts */
+.arial {
+  font-family: Arial, sans-serif;
+}
+
+.verdana {
+  font-family: Verdana, sans-serif;
+}
+
+.tahoma {
+  font-family: Tahoma, sans-serif;
+}
+
+.trebuchet {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.georgia {
+  font-family: Georgia, serif;
+}
+
+.times {
+  font-family: "Times New Roman", serif;
+}
+
+.courier {
+  font-family: "Courier New", monospace;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.fantasy {
+  font-family: fantasy;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;p style=&quot;font-family: 'Courier New', monospace;&quot;&gt;
+  Replace_with_your_text
+&lt;/p&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Text align</h2>
+            <p>The text-align property changes the alignment of text. You can make it fix to the left, right or center.</p>
+            <div class="sample-image">
+              <p style="text-align: left;">left text</p>
+              <p style="text-align: center;">center text</p>
+              <p style="text-align: right;">right text</p>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.left-text {
+  text-align: left;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.justify-text {
+  text-align: justify;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;p style=&quot;text-align: center;&quot;&gt;
+  Replace_with_your_text
+&lt;/p&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Padding</h2>
+            <p>The padding property adds space inside an element.</p>
+            <div class="sample-image">
+              <div style="background: #aeaff2; color: black; padding: 20px;">
+                Look at how much room I have!
+              </div>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.padding-box {
+  padding: 20px;
+}
+
+/* different padding sides */
+.padding-top {
+  padding-top: 20px;
+}
+
+.padding-right {
+  padding-right: 20px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.padding-left {
+  padding-left: 20px;
+}
+
+/* top/right/bottom/left */
+.custom-padding {
+  padding: 10px 20px 30px 40px;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;div style=&quot;padding: 20px;&quot;&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Margin</h2>
+            <p>The margin property adds space outside an element. If you want your elements to social distance, here is how.</p>
+            <div class="sample-image">
+              <div style="background: #99ddff; color: black; padding: 10px; margin: 20px;">
+                Don't come too close!
+              </div>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.margin-box {
+  margin: 20px;
+}
+
+/* different margin sides */
+.margin-top {
+  margin-top: 20px;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
+/* centers block elements */
+.center-box {
+  margin: 0 auto;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;div style=&quot;margin: 20px;&quot;&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Border</h2>
+            <p>The border property adds an outline around something. You need to define it's style size and color for it to work. In the CSS class code, common border styles are listed.</p>
+            <div class="sample-image">
+              <div style="border: 3px solid #ffcc66; padding: 12px;">
+                solid border
+              </div>
+              <br>
+              <div style="border: 3px dotted #99ddff; padding: 12px;">
+                dotted border
+              </div>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.border-box {
+  border: 3px solid white;
+  padding: 12px;
+}
+
+/* border styles */
+.border-none {
+  border: 3px none white;
+}
+
+.border-solid {
+  border: 3px solid white;
+}
+
+.border-dotted {
+  border: 3px dotted white;
+}
+
+.border-dashed {
+  border: 3px dashed white;
+}
+
+.border-double {
+  border: 3px double white;
+}
+
+.border-groove {
+  border: 3px groove white;
+}
+
+.border-ridge {
+  border: 3px ridge white;
+}
+
+.border-inset {
+  border: 3px inset white;
+}
+
+.border-outset {
+  border: 3px outset white;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;div style=&quot;border: 3px solid white; padding: 12px;&quot;&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Border radius</h2>
+            <p>The border-radius property rounds the corners of a box, image, or button. Higher numbers make the corners more round.</p>
+            <div class="sample-image">
+              <div style="background: #cacfde; color: black; padding: 12px; border-radius: 12px;">
+                rounded corners
+              </div>
+              <br>
+              <div style="background: #1f84b7; color: black; padding: 12px; border-radius: 50px;">
+                At which point am I considered a oval?
+              </div>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.rounded-box {
+  border-radius: 12px;
+}
+
+.very-rounded-box {
+  border-radius: 50px;
+}
+
+/* circle shape works best on square images or boxes */
+.circle {
+  border-radius: 50%;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;div style=&quot;border-radius: 12px;&quot;&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Width + Height</h2>
+            <p>The width and height properties control how wide and tall something is. You can use pixels, percentages, or automatic sizing. Automatic sizing is good if you want your element to be responsive to other screen resolutions.</p>
+            <div class="sample-image">
+              <div style="background: #ff6678; color: black; width: 300px; height: 80px; padding: 10px;">
+                300px wide and 80px tall
+              </div>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.sized-box {
+  width: 200px;
+  height: 80px;
+}
+
+/* common width and height options */
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.auto-width {
+  width: auto;
+}
+
+.max-width-box {
+  max-width: 600px;
+}
+
+.min-height-box {
+  min-height: 200px;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;div style=&quot;width: 200px; height: 80px;&quot;&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Text transform</h2>
+            <p>The text-transform property changes how letters appear. Text can be set to uppercase, lowercase, or capitalized. This allows you to write normally in your HTML and let CSS change how the text displays.</p>
+            <div class="sample-image">
+              <p style="text-transform: uppercase;">this text becomes uppercase</p>
+              <p style="text-transform: lowercase;">THIS TEXT BECOMES LOWERCASE</p>
+              <p style="text-transform: capitalize;">this text becomes capitalized</p>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.uppercase-text {
+  text-transform: uppercase;
+}
+
+.lowercase-text {
+  text-transform: lowercase;
+}
+
+.capitalized-text {
+  text-transform: capitalize;
+}
+
+.normal-text {
+  text-transform: none;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;p style=&quot;text-transform: uppercase;&quot;&gt;
+  Replace_with_your_text
+&lt;/p&gt;
+
+&lt;p style=&quot;text-transform: lowercase;&quot;&gt;
+  Replace_with_your_text
+&lt;/p&gt;
+
+&lt;p style=&quot;text-transform: capitalize;&quot;&gt;
+  Replace_with_your_text
+&lt;/p&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Color gradient</h2>
+            <p>A color gradient blends two or more colors together. You can use it inside div tags, buttons, page backgrounds, or title boxes. The "90deg" controls the angle of the gradient.</p>
+            <div class="sample-image" style="background: linear-gradient(90deg, #ce4c8d, #99ddff); min-height: 80px;">
+              <p style="padding: 20px; color: black;">You can also put text on it.</p>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.gradient-box {
+  background: linear-gradient(90deg, #ce4c8d, #99ddff);
+}
+
+/* other gradient directions */
+.gradient-sideways {
+  background: linear-gradient(90deg, #ce4c8d, #99ddff);
+}
+
+.gradient-up-down {
+  background: linear-gradient(180deg, #ce4c8d, #99ddff);
+}
+
+.gradient-corner {
+  background: linear-gradient(45deg, #ce4c8d, #99ddff);
+}
+
+.radial-gradient {
+  background: radial-gradient(circle, #ce4c8d, #99ddff);
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;div style=&quot;background: linear-gradient(90deg, #ce4c8d, #99ddff); padding: 20px; color: black;&quot;&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Text shadow</h2>
+            <p>The text-shadow property adds a shadow or glow behind text. Yeah, it can make things glow even though it's called "text-shadow". I have been lied to!</p>
+            <div class="sample-image">
+              <h3 style="text-shadow: 0 0 8px #ffcc66;">glowing text</h3>
+              <h3 style="text-shadow: 3px 3px #000000;">shadow text</h3>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.glow-text {
+  text-shadow: 0 0 8px #ffcc66;
+}
+
+.shadow-text {
+  text-shadow: 3px 3px #000000;
+}
+
+.multiple-shadow-text {
+  text-shadow: 2px 2px #000000, 0 0 8px #ffcc66;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;h3 style=&quot;text-shadow: 0 0 8px #ffcc66;&quot;&gt;
+  Replace_with_your_text
+&lt;/h3&gt;
+
+&lt;h3 style=&quot;text-shadow: 3px 3px #000000;&quot;&gt;
+  Replace_with_your_text
+&lt;/h3&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>2D transform</h2>
+            <p>The transform property can rotate, move, stretch, or resize an element. If you want to make it look like your page is melting or have sticky notes on your page, this is how!</p>
+            <div class="sample-image">
+              <div style="background: #ffcc66; color: black; padding: 12px; display: inline-block; transform: rotate(-5deg);">
+                I'm all wobbly...
+              </div>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.tilted-box {
+  background: #ffcc66;
+  color: black;
+  padding: 12px;
+  display: inline-block;
+  transform: rotate(-5deg);
+}
+
+/* other transform examples */
+.moved-box {
+  transform: translate(20px, 10px);
+}
+
+.bigger-box {
+  transform: scale(1.2);
+}
+
+.skewed-box {
+  transform: skew(10deg);
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;div style=&quot;background: #ffcc66; color: black; padding: 12px; display: inline-block; transform: rotate(-5deg);&quot;&gt;
+  Replace_with_your_text
+&lt;/div&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+        <article class="code-card css">
+          <div class="inner-border">
+            <h2>Button style</h2>
+            <p>CSS can change how buttons and links look. You can change the background color, border, padding, text color, and hover effect.</p>
+            <div class="sample-image">
+              <button style="background: #ffcc66; color: black; border: 3px outset white; padding: 10px 16px;">
+                I may be a button, but you cannot press me.
+              </button>
+            </div>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">CSS class</span>
+              <pre><code>.button-style {
+  background: #ffcc66;
+  color: black;
+  border: 3px outset white;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.button-style:hover {
+  background: #ff99cc;
+}</code></pre>
+            </button>
+
+            <button class="code-box" type="button">
+              <span class="copy-note">inline HTML style</span>
+              <pre><code>&lt;button style=&quot;background: #ffcc66; color: black; border: 3px outset white; padding: 10px 16px;&quot;&gt;
+  Replace_with_your_text
+&lt;/button&gt;</code></pre>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <footer><a href="https://hanabihenki.github.io/site/index.html">Go back to main website</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
