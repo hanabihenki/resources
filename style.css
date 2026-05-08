@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;700&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;700&family=Jersey+10&family=Sixtyfour&display=swap');
 
 * {
   box-sizing: border-box;
@@ -85,12 +85,16 @@ a, button {
 
 .nav-title {
   color: #ffcc66;
-  font-weight: bold;
+  font-family: "Jersey 10", "Chivo Mono", "Courier New", monospace;
+  font-size: 32px;
+  font-weight: normal;
   text-align: center;
+  text-shadow: #ff6666 2px 2px, #ffcc66 0 0 6px;
   margin: 8px 0 20px;
   border: 2px dotted #ffffff;
   padding: 10px;
-  line-height: 1.15;
+  line-height: 0.9;
+  letter-spacing: 1px;
 }
 
 .side-nav a {
@@ -131,7 +135,10 @@ main {
   background: #101336;
   border: 4px solid #ff99cc;
   padding: 20px;
-  box-shadow: 8px 8px 0 #000000;
+  box-shadow:
+    8px 8px 0 #000000,
+    0 0 8px rgba(255, 153, 204, 0.45);
+  animation: border-glow 5s linear infinite;
 }
 
 .welcome-box h1 {
@@ -139,8 +146,11 @@ main {
   font-size: 44px;
   margin: 10px 0;
   color: #ffcc66;
+  
   line-height: 1.15;
   letter-spacing: 1px;
+  text-shadow: #ff6666 2px 2px, #ffcc66 0 0 6px;
+
 }
 
 .subtitle {
@@ -220,7 +230,9 @@ main {
   margin: 12px auto;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-shadow: 3px 3px #000000;
+  text-shadow:
+    3px 3px #000000,
+    0 0 5px currentColor;
   line-height: 1.1;
 }
 
@@ -262,7 +274,39 @@ main {
 .code-card {
   background: #101336;
   border: 4px solid #ffffff;
-  padding: 10px;
+  padding: 5px;
+  box-shadow:
+    0 0 6px rgba(255, 255, 255, 0.22),
+    0 0 10px rgba(255, 204, 102, 0.22);
+  animation: border-glow 5s linear infinite;
+}
+
+@keyframes border-glow {
+  0% {
+    box-shadow:
+      0 0 5px rgba(255, 153, 204, 0.45),
+      0 0 10px rgba(255, 153, 204, 0.22);
+  }
+  25% {
+    box-shadow:
+      0 0 5px rgba(255, 204, 102, 0.45),
+      0 0 10px rgba(255, 204, 102, 0.22);
+  }
+  50% {
+    box-shadow:
+      0 0 5px rgba(153, 221, 255, 0.45),
+      0 0 10px rgba(153, 221, 255, 0.22);
+  }
+  75% {
+    box-shadow:
+      0 0 5px rgba(214, 160, 255, 0.45),
+      0 0 10px rgba(214, 160, 255, 0.22);
+  }
+  100% {
+    box-shadow:
+      0 0 5px rgba(255, 153, 204, 0.45),
+      0 0 10px rgba(255, 153, 204, 0.22);
+  }
 }
 
 .code-card.html { border-color: #ff9966; }
@@ -281,6 +325,9 @@ main {
   margin: 0 0 10px;
   font-size: 20px;
   color: #ffcc66;
+  text-shadow:
+    2px 2px #000000,
+    0 0 4px #ffcc66;
 }
 
 .code-card p {
@@ -366,11 +413,20 @@ footer {
   background: #0b1040;
   border-top: 4px double #ffcc66;
   margin-left: -30px;
+  font-family: "Jersey 10", "Chivo Mono", "Courier New", monospace;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
 footer a {
   color: #66baff;
-  font-weight: bold;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffcc66;
+  text-decoration: underline;
 }
 
 @media (max-width: 700px) {
@@ -418,7 +474,9 @@ footer a {
   .welcome-box {
     margin: 28px auto 22px;
     padding: 14px;
-    box-shadow: 5px 5px 0 #000000;
+    box-shadow:
+      5px 5px 0 #000000,
+      0 0 7px rgba(255, 153, 204, 0.35);
   }
 
   .welcome-box h1,
@@ -461,7 +519,9 @@ footer a {
 @media (prefers-reduced-motion: reduce) {
   .star,
   .home-buttons a,
-  .home-buttons a::before {
+  .home-buttons a::before,
+  .welcome-box,
+  .code-card {
     animation: none !important;
     transition: none !important;
   }
@@ -486,7 +546,6 @@ footer a {
   color: #ff99cc;
 }
 
-
 .code-details {
   margin-top: 14px;
 }
@@ -508,4 +567,33 @@ footer a {
 
 .code-details .code-box {
   margin-top: 10px;
+}
+
+.resource-jump-buttons {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  text-align: center;
+  background: #101336;
+  border: 2px dotted #ffcc66;
+  padding: 12px;
+}
+
+.resource-jump-buttons a {
+  display: inline-block;
+  color: #020617;
+  background: #99ddff;
+  border: 3px outset #ffffff;
+  padding: 8px 10px;
+  margin: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.resource-jump-buttons a:hover,
+.resource-jump-buttons a:focus-visible {
+  background: #ff99cc;
+  color: #000000;
+  transform: translateY(-4px) rotate(-2deg);
+  box-shadow: 4px 4px 0 #000000, 0 0 12px #ffcc66;
 }
