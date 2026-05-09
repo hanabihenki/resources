@@ -116,8 +116,8 @@ a, button {
 .page-wrap {
   position: relative;
   z-index: 1;
-  margin-left: 170px;
-  width: calc(100% - 170px);
+  margin-left: 140px;
+  width: calc(100% - 140px);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -146,11 +146,9 @@ main {
   font-size: 44px;
   margin: 10px 0;
   color: #ffcc66;
-  
   line-height: 1.15;
   letter-spacing: 1px;
   text-shadow: #ff6666 2px 2px, #ffcc66 0 0 6px;
-
 }
 
 .subtitle {
@@ -408,11 +406,12 @@ pre {
 }
 
 footer {
+  margin-top: auto;
   text-align: center;
   padding: 16px;
   background: #0b1040;
   border-top: 4px double #ffcc66;
-  margin-left: -30px;
+  margin-left: 0;
   font-family: "Jersey 10", "Chivo Mono", "Courier New", monospace;
   font-size: 28px;
   letter-spacing: 1px;

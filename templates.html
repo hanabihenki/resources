@@ -43,7 +43,7 @@
   </style>
 </head>
 
-<body>
+<body id="top">
   <aside class="side-nav">
     <div class="nav-title">Ray's<br>Coding<br>Vault</div>
 
@@ -71,6 +71,154 @@
 
         <article class="code-card templates">
           <div class="inner-border">
+            <h2>Basic User Profile</h2>
+            <p>A basic user profile template with a username space, basic description, and top 3 characters.</p>
+
+            <div class="sample-image">
+              <center>
+                <div style="max-width: 600px; background: #e3cadf; color: white; border: 3px solid #d6a0ff; padding: 15px; font-family: monospace;">
+                  <h1 style="font-size: 32px; font-weight: bold; letter-spacing: 5px; text-transform: uppercase; margin: 0; color: #f6f6f6;">
+                    Azura Zar
+                  </h1>
+
+                  <p style="font-size: 14px; margin-top: 8px;">
+                    <b>Name:</b> Ray | <b>Gender:</b> awesomegender | <b>Pronouns:</b> he/him
+                  </p>
+
+                  <hr>
+
+                  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px;">
+
+                    <div style="background: #f8b4ed; border: 2px solid #ff99cc; padding: 8px;">
+                      <img src="https://hanabihenki.github.io/resources/assets/HI7G.gif" alt="character image" style="width: 100%; height: 120px; object-fit: cover; border: 2px solid white;">
+                      <p style="margin: 8px 0 4px;"><b>Brony James</b></p>
+                      <a href="#" style="color: #ec6f6f;">view character</a>
+                    </div>
+
+                    <div style="background: #f8b4ed; border: 2px solid #ff99cc; padding: 8px;">
+                      <img src="https://hanabihenki.github.io/resources/assets/HI7G.gif" alt="character image" style="width: 100%; height: 120px; object-fit: cover; border: 2px solid white;">
+                      <p style="margin: 8px 0 4px;"><b>Steph Curry</b></p>
+                      <a href="#" style="color: #ec6f6f;">view character</a>
+                    </div>
+
+                    <div style="background: #f8b4ed; border: 2px solid #ff99cc; padding: 8px;">
+                      <img src="https://hanabihenki.github.io/resources/assets/HI7G.gif" alt="character image" style="width: 100%; height: 120px; object-fit: cover; border: 2px solid white;">
+                      <p style="margin: 8px 0 4px;"><b>Pat Spencer</b></p>
+                      <a href="#" style="color: #ec6f6f;">view character</a>
+                    </div>
+
+                  </div>
+
+                  <div style="text-align: right; margin-top: 10px;">
+                    <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;" title="Code by azurazar">
+                      <i class="fa-solid fa-code"></i>
+                    </a>
+                  </div>
+                </div>
+              </center>
+            </div>
+
+            <details class="code-details">
+              <summary>view code</summary>
+
+              <button class="code-box" type="button">
+                <span class="copy-note">click to copy</span>
+                <pre><code>&lt;!--
+Basic user profile template
+
+Feel free to change the colors being used to better match your aesthetic.
+
+  Colors used:
+  #e3cadf = main background
+  white = main text and image border
+  #d6a0ff = purple outer border
+  #f6f6f6 = title text
+  #f8b4ed = character box 
+  #ff99cc = pink character box border
+  #ec6f6f = blue character link
+  #df3838 = red credit icon
+
+  Replace &quot;your_text_here&quot; with your own text.
+  Replace &quot;Character_name&quot; with each character's name.
+  Replace the image links with your own image links.
+  Replace href=&quot;#&quot; with the link to your character page.
+  Keep href=&quot;#&quot; if you do not want the link to go anywhere yet.
+--&gt;
+&lt;center&gt;
+	&lt;!-- This is the main box for the whole template. --&gt;
+	&lt;div style=&quot;max-width: 600px; background: #e3cadf; color: white; border: 3px solid #d6a0ff; padding: 15px; font-family: monospace;&quot;&gt;
+		&lt;h1 style=&quot;font-size: 32px; font-weight: bold; letter-spacing: 5px; text-transform: uppercase; margin: 0; color: #f6f6f6;&quot;&gt;
+			&lt;!-- Put your username here --&gt; Name
+		&lt;/h1&gt;
+
+		&lt;!-- Fill in your infomation here. --&gt;
+		&lt;p style=&quot;font-size: 14px; margin-top: 8px;&quot;&gt;
+			&lt;b&gt;Name:&lt;/b&gt; your_text_here | &lt;b&gt;Gender:&lt;/b&gt; your_text_here | &lt;b&gt;Pronouns:&lt;/b&gt; your_text_here
+		&lt;/p&gt;
+
+		&lt;hr&gt;
+
+		&lt;!-- This grid holds the three character boxes. --&gt;
+		&lt;div style=&quot;display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px;&quot;&gt;
+		    
+			&lt;!-- Character one starts here. --&gt;
+			&lt;div style=&quot;background: #f8b4ed; border: 2px solid #ff99cc; padding: 8px;&quot;&gt;
+				&lt;!-- Put character one's image link after src=&quot; --&gt;
+				&lt;img src=&quot;https://hanabihenki.github.io/resources/assets/HI7G.gif&quot; alt=&quot;character image&quot; style=&quot;width: 100%; height: 120px; object-fit: cover; border: 2px solid white;&quot;&gt;
+
+				&lt;!-- Put character one's name here. --&gt;
+				&lt;p style=&quot;margin: 8px 0 4px;&quot;&gt;&lt;b&gt;Character_name&lt;/b&gt;&lt;/p&gt;
+
+				&lt;!-- Put character one's page link in href. Keep # if you do not have a link yet. --&gt;
+				&lt;a href=&quot;#&quot; style=&quot;color: #ec6f6f;&quot;&gt;view character&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;!-- Character one ends here. --&gt;
+			
+			
+			&lt;!-- Character two starts here. --&gt;
+			&lt;div style=&quot;background: #f8b4ed; border: 2px solid #ff99cc; padding: 8px;&quot;&gt;
+				&lt;!-- Put character two's image link in src. --&gt;
+				&lt;img src=&quot;https://hanabihenki.github.io/resources/assets/HI7G.gif&quot; alt=&quot;character image&quot; style=&quot;width: 100%; height: 120px; object-fit: cover; border: 2px solid white;&quot;&gt;
+
+				&lt;!-- Put character two's name here. --&gt;
+				&lt;p style=&quot;margin: 8px 0 4px;&quot;&gt;&lt;b&gt;Character_name&lt;/b&gt;&lt;/p&gt;
+
+				&lt;!-- Put character two's page link in href. Keep # if you do not have a link yet. --&gt;
+				&lt;a href=&quot;#&quot; style=&quot;color: #ec6f6f;&quot;&gt;view character&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;!-- Character two ends here. --&gt;
+			
+			
+			&lt;!-- Character three starts here. --&gt;
+			&lt;div style=&quot;background: #f8b4ed; border: 2px solid #ff99cc; padding: 8px;&quot;&gt;
+				&lt;!-- Put character three's image link in src. --&gt;
+				&lt;img src=&quot;https://hanabihenki.github.io/resources/assets/HI7G.gif&quot; alt=&quot;character image&quot; style=&quot;width: 100%; height: 120px; object-fit: cover; border: 2px solid white;&quot;&gt;
+
+				&lt;!-- Put character three's name here. --&gt;
+				&lt;p style=&quot;margin: 8px 0 4px;&quot;&gt;&lt;b&gt;Character_name&lt;/b&gt;&lt;/p&gt;
+
+				&lt;!-- Put character three's page link in href. Keep # if you do not have a link yet. --&gt;
+				&lt;a href=&quot;#&quot; style=&quot;color: #ec6f6f;&quot;&gt;view character&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;!-- Character three ends here. --&gt;
+			
+		&lt;/div&gt;
+
+		&lt;!-- Do not remove the credit below this line. --&gt;
+		&lt;div style=&quot;text-align: right; margin-top: 10px;&quot;&gt;
+			&lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot; title=&quot;Code by azurazar&quot;&gt;
+				&lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/center&gt;</code></pre>
+              </button>
+            </details>
+          </div>
+        </article>
+
+        <article class="code-card templates">
+          <div class="inner-border">
             <h2>Simple character info</h2>
             <p>A small character information template with a picture, name, pronouns, sexuality, age, and species.</p>
 
@@ -90,7 +238,7 @@
                 <div style="clear: both;"></div>
 
                 <div style="text-align: right;">
-                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;">
+                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;" title="Code by azurazar">
                     <i class="fa-solid fa-code"></i>
                   </a>
                 </div>
@@ -102,8 +250,7 @@
 
               <button class="code-box" type="button">
                 <span class="copy-note">click to copy</span>
-                <pre><code>
-&lt;!-- This is where the character profile starts --&gt;
+                <pre><code>&lt;!-- This is where the character profile starts --&gt;
 &lt;!-- You're free to modify the colors and the pixel values to change the size of the box. Decreasing the padding will make the box smaller and text closer together. --&gt;
 
 &lt;!-- This template uses 5 main colors:
@@ -138,16 +285,15 @@
   &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
 
   &lt;!-- Do not remove anything below this line --&gt;
-  &lt;div style=&quot;text-align: right;&quot;&gt;
-    &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot;&gt;
-      &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
+&lt;div style=&quot;text-align: right;&quot;&gt;
+  &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot; title=&quot;Code by azurazar&quot;&gt;
+    &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;!-- This is where the character profile ends --&gt;
-                </code></pre>
+&lt;!-- This is where the character profile ends --&gt;</code></pre>
               </button>
             </details>
           </div>
@@ -174,8 +320,8 @@
                   <p><b>Likes:</b> Apples, ice cream</p>
                 </div>
 
-                <div style="text-align: right; margin-top: 8px;">
-                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;">
+                <div style="text-align: right;">
+                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;" title="Code by azurazar">
                     <i class="fa-solid fa-code"></i>
                   </a>
                 </div>
@@ -187,8 +333,7 @@
 
               <button class="code-box" type="button">
                 <span class="copy-note">click to copy</span>
-                <pre><code>
-&lt;!-- This is where the mini character card starts --&gt;
+                <pre><code>&lt;!-- This is where the mini character card starts --&gt;
 &lt;!-- You're free to modify the colors and the pixel values to change the size of the box. Decreasing the padding will make the box smaller and text closer together. --&gt;
 
 &lt;!-- This template uses 7 main colors:
@@ -230,16 +375,15 @@
   &lt;/div&gt;
 
   &lt;!-- Do not remove anything below this line --&gt;
-  &lt;div style=&quot;text-align: right; margin-top: 8px;&quot;&gt;
-    &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot;&gt;
-      &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
+&lt;div style=&quot;text-align: right;&quot;&gt;
+  &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot; title=&quot;Code by azurazar&quot;&gt;
+    &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;!-- This is where the mini character card ends --&gt;
-                </code></pre>
+&lt;!-- This is where the mini character card ends --&gt;</code></pre>
               </button>
             </details>
           </div>
@@ -270,8 +414,8 @@
                   <p style="margin-bottom: 0;">Firestar was a great leader for Thunderclan. His arrival was foretold in a prophecy.</p>
                 </div>
 
-                <div style="text-align: right; margin-top: 8px;">
-                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;">
+                <div style="text-align: right;">
+                  <a href="https://hanabihenki.github.io/resources/index.html" style="color: #df3838;" title="Code by azurazar">
                     <i class="fa-solid fa-code"></i>
                   </a>
                 </div>
@@ -283,8 +427,7 @@
 
               <button class="code-box" type="button">
                 <span class="copy-note">click to copy</span>
-                <pre><code>
-&lt;!-- This is where the character notes box starts --&gt;
+                <pre><code>&lt;!-- This is where the character notes box starts --&gt;
 &lt;!-- You're free to modify the colors and the pixel values to change the size of the box. Decreasing the padding will make the box smaller and text closer together. --&gt;
 
 &lt;!-- This template uses 7 main colors:
@@ -332,16 +475,15 @@
   &lt;/div&gt;
 
   &lt;!-- Do not remove anything below this line --&gt;
-  &lt;div style=&quot;text-align: right; margin-top: 8px;&quot;&gt;
-    &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot;&gt;
-      &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
+&lt;div style=&quot;text-align: right;&quot;&gt;
+  &lt;a href=&quot;https://hanabihenki.github.io/resources/index.html&quot; style=&quot;color: #df3838;&quot; title=&quot;Code by azurazar&quot;&gt;
+    &lt;i class=&quot;fa-solid fa-code&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;!-- This is where the character notes box ends --&gt;
-                </code></pre>
+&lt;!-- This is where the character notes box ends --&gt;</code></pre>
               </button>
             </details>
           </div>
@@ -349,6 +491,7 @@
 
       </div>
     </main>
+
     <footer>
       <a href="https://hanabihenki.github.io/site/index.html">Go back to main website</a>
     </footer>
