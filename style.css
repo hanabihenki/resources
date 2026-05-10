@@ -625,3 +625,20 @@ footer a:hover {
     0 0 8px #ff99cc,
     0 0 14px #ffcc66;
 }
+
+.help-box h2,
+.help-box h3 {
+  color: #ffcc66;
+  text-shadow:
+    2px 2px #000000,
+    0 0 4px #ffcc66;
+}
+.help-box {
+  border-color: #ff99cc;
+}
+
+.help-mini-box {
+  background: #0b1040;
+  border: 2px dotted #ff99cc;
+  padding: 14px;
+}
