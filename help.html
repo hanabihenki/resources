@@ -105,7 +105,7 @@
       <h1 class="page-title help-title">help</h1>
 
       <p class="intro">
-        Is your code broken or you don't understand how to use the code? This page is here for you! If you have a question that isn't answered on this page, reach out to me on
+        Is your code broken or are you a beginner? This page is here for you! If you have a question that isn't answered on this page, reach out to me on
         <a class="inline-links" href="https://bsky.app/profile/hanabihenki.bsky.social">Bluesky</a>
         or
         <a class="inline-links" href="https://x.com/azurazar">Twitter</a>.
@@ -126,7 +126,9 @@
 
         <section class="resource-box help-box" id="general-help">
           <h2>General Help</h2>
-
+          <p class="help-question">
+            "I want to see live changes to the code I'm working on."
+          </p>
           <p>
             I highly recommend using a live code editor like
             <a class="inline-links" href="https://codepen.io/pen" target="_blank">CodePen</a>,
@@ -137,16 +139,66 @@
             <a class="inline-links" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editor" target="_blank">W3Schools Tryit Editor</a>
             to test code and get live updates. Websites that allow code to be uploaded do not always have the best editors.
           </p>
-        </section>
+<BR><hr><br>
+          <p class="help-question">
+            "Why does my code look different on different websites?"
+          </p>
+          <p>
+Different websites have different rules for what code is allowed to be used. For example, since Art Fight has a strict whitelist (a list of allowed code), a Toy House template may not work on Art Fight. If you want to make sure your code works, check what code is allowed on the specific website you're uploading html for.
 
+</p>
+
+
+        </section>
+<br>
         <section class="resource-box help-box" id="html-help">
           <h2>HTML Help</h2>
 
-          <p>
-            WIP
-          </p>
-        </section>
 
+          <p class="help-question">
+            "What is HTML?"
+          </p>
+
+          <p>
+  HTML stands for HyperText Markup Language. It is the basic building block of every website you see online and use everyday. "Tags" is what different commands in HTML are called. They can be used to add text, images, links, and more to a website. HTML is technically not coding and is instead a "markup" language but for simplicity and consistency I will be calling it coding. If you want to learn more about HTML, visit the HTML page.
+
+</p>
+<br><hr><br>
+          <p class="help-question">
+            "Why isn't my image not showing up?"
+          </p>
+
+          <p>
+<ol>
+<li> Make sure your link is in the correct place. It should look like:
+&lt;a href=&quot;LINK_HERE&quot;&gt;
+<br>
+The quotes are necessary.
+<br><br>
+<li>
+Check the image file type. Allowed image endings are usually .png, .jpg, or .gif.
+<br>
+If needed, change:<br>
+.jpeg to .jpg<br>
+.gifv to .gif<br>
+.webp to .jpg or .png<br>
+.svg to .png<br>
+<br>
+This is because some websites only allow certain file types. 
+<br><br>
+<li>
+    Check the file size of the image. 3000px or above is too large. .pngs work better if they are smaller than 1500px.
+
+
+
+</ol>
+        </p>
+
+
+
+
+        </section>
+<br>
         <section class="resource-box help-box" id="art-fight-help">
           <h2>Art Fight Help</h2>
 
@@ -257,8 +309,27 @@ To change your character code, click on your character, click edit and click the
           </p>
 
           <p>
-            Your code may be laggy because of Art Fight's servers or your images are too large. If you have multiple 2000px or above images, it can cause lag.
+            Your code may be laggy because of Art Fight's servers or your images are too large. If you have multiple 3000px pngs or above images, it can cause lag. I reccomend only using jpgs with a maximum size of 2000px or so.
           </p>
+
+<br><hr><br>
+          <p class="help-question">
+            "I don't know how to use CSS on Art Fight."
+          </p>
+
+          <p>
+(This is only applicable for FREE Art Fight users)<br>
+For free users, CSS can only be used in the profile and character descriptions. It cannot be used to overhaul the look of the website when someone visits your profile, that is a premium feature.
+<br>
+To use CSS, you have to put it in a &lt;style&gt; tag. For example:
+&lt;div style="color: red;"&gt; This text is red. &lt;/div&gt;
+        </p>
+
+
+
+
+
+
 
         </section>
 
